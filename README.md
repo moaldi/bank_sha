@@ -1,6 +1,6 @@
 # bank_sha
 
-A new Flutter project.
+INI CUMA NIRUIN TUTORIAL
 
 ## Getting Started
 
