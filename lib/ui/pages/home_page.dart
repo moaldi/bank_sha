@@ -84,6 +84,7 @@ class HomePage extends StatelessWidget {
           buildLevel(),
           buildServices(),
           buildLatestTransaction(),
+          buildSendAgain(),
         ],
       ),
     );
@@ -325,7 +326,6 @@ class HomePage extends StatelessWidget {
               fontWeight: semiBold,
             ),
           ),
-          
           Container(
             padding: const EdgeInsets.all(22),
             margin: const EdgeInsets.only(
@@ -369,6 +369,29 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget buildSendAgain() {
+    return Container(
+      margin: const EdgeInsets.only(
+        top: 30,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Send Again',
+            style: blackTextStyle.copyWith(
+              fontSize: 16,
+              fontWeight: semiBold,
+            ),
+          ),
+          const SizedBox(
+            height: 14,
           ),
         ],
       ),
